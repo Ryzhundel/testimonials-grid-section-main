@@ -1,0 +1,46 @@
+@import url("common.css");
+
+main {
+  display: grid;
+   grid-template: "art1 art1 art2 art3" 1fr
+    "art4 art5 art5 art3" 1fr / 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "art1 art1 art2 art3"
+    "art4 art5 art5 art3"; */
+
+    grid-gap: 1vmin;
+
+  max-width: 98vw;
+  width:  1200px;
+  max-height: 90vh;
+  height: 700px;
+
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main  article:nth-of-type(1) {
+  background-color: green;
+  grid-area: art1;
+}
+
+main article:nth-of-type(2) {
+  background-color: blue;
+  grid-area: art2;
+}
+main  article:nth-of-type(3) {
+  background-color: rgb(207, 63, 135);
+  grid-area: art3;
+}
+main  article:nth-of-type(4) {
+  background-color: rgb(197, 214, 47);
+  grid-area: art4;
+}
+main  article:nth-of-type(5) {
+  background-color: rgb(94, 240, 245);
+  grid-area: art5;
+}
