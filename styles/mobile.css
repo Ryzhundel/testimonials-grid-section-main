@@ -1,1 +1,10 @@
 @import url("common.css");
+
+main {
+    grid-template: "art1" 1fr
+    "art2" 1fr
+    "art3" 1fr
+    "art4" 1fr
+    "art5" 1fr / 1fr;
+
+}
